@@ -25,15 +25,20 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 p-4 md:px-20 text-center">
-        <section className=" p-4" aria-label="Introduction">
+        <section className="p-4" aria-label="Introduction">
           <h1 className="text-4xl md:text-6xl font-bold pt-4">CardTable</h1>
 
           <p className="mt-3 text-lg  md:text-2xl px-4">
             A responsive table component with CSS Grid, React and Tailwind CSS.
           </p>
 
-          <div className="my-12 w-full max-w-5xl">
-            <CustomCardExample />
+          <div
+            className="my-12 rounded md:border overflow-x-scroll"
+            style={{ width: "90vw", maxWidth: "1402px" }}
+          >
+            <div className="md:w-1400">
+              <CustomCardExample />
+            </div>
           </div>
 
           <div className="mb-20 hidden md:block flex flex-col">
