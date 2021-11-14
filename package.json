@@ -1,0 +1,30 @@
+{
+  "name": "cardtable",
+  "description": "A responsive table component with CSS Grid, React and Tailwind CSS.",
+  "version": "0.1.0",
+  "author": "John Polacek (https://johnpolacek.com/)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format-watch": "npm run format && onchange \"**/*.{js,jsx,ts,tsx,json,md}\" -- prettier --write {{changed}}"
+  },
+  "dependencies": {
+    "next": "latest",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.34",
+    "autoprefixer": "^10.4.0",
+    "onchange": "^7.1.0",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.4.4"
+  },
+  "repository": "https://github.com/johnpolacek/stacktable",
+  "license": "MIT-0"
+}
