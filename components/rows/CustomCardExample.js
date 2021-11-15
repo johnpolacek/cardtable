@@ -29,6 +29,7 @@ const CustomCardExample = () => {
 			})}
 			renderRows={renderRows}
 			data={itemData}
+			tableClasses={"block text-center"}
 			gridTemplateColumns="1fr 2fr 4fr 3fr 3fr 2fr 2fr 2fr 2fr"
 			label="Custom Card Example"
 		/>

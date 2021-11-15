@@ -3,6 +3,7 @@ const CardTable = ({
 	columns,
 	renderRows,
 	data,
+	tableClasses, 
 	gridTemplateColumns,
 	label,
 }) => {
@@ -10,6 +11,8 @@ const CardTable = ({
 	columns = columns.map((col) =>
 		typeof col === "string" ? { label: col } : col
 	)
+
+	tableClasses ??= "block md:border text-center"
 
 	// if renderRows is undefined, use this function to generate the rows and table cells
 	// to customize, create your own version of this function and pass it to CardTable
@@ -60,7 +63,7 @@ const CardTable = ({
 	)
 
 	return (
-		<table id={id} className="block md:border text-center" aria-label={label}>
+		<table id={id} className={tableClasses} aria-label={label}>
 			<thead aria-hidden="true" className="border-b hidden md:block">
 				<tr
 					className={"block md:grid grid-flow-col"}

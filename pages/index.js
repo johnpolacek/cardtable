@@ -34,7 +34,7 @@ export default function Home() {
 
           <div
             className="my-12 rounded md:border overflow-x-scroll"
-            style={{ width: "90vw", maxWidth: "1402px" }}
+            style={{ maxWidth: "96vw" }}
           >
             <div className="md:w-1400">
               <CustomCardExample />

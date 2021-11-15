@@ -28,6 +28,7 @@ const CustomColumnsExample = () => {
 			})}
 			data={itemData}
 			gridTemplateColumns="1fr 2fr 4fr 3fr 3fr 2fr"
+			tableClasses="block text-center"
 			label="Custom Columns CardTable Example"
 		/>
 	)
